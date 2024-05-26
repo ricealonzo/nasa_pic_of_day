@@ -17,7 +17,7 @@ get("/nasa_response") do
 
   @date = @parsed_response.fetch("date")
   @explanation = @parsed_response.fetch("explanation")
-  @ = @parsed_response.fetch("@url")
+  @url = @parsed_response.fetch("url")
 
   erb(:nasa_response)
 
